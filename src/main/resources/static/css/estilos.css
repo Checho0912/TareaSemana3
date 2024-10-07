@@ -1,0 +1,119 @@
+.musicaFondo{
+    display: none;
+}
+
+nav {
+    background-color: black;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    color:white;
+    /* Espaciado */
+    padding-top: 15px; 
+    padding-left: 5%;
+    padding-right: 5%;
+    
+    
+    /*Colocamos el encabezado por encima para solucionar la sombra*/
+    position: relative;
+}
+
+/* Nombre de la Tienda */
+nav h1 {
+    font-size: 45px;
+}
+
+/*Formato de enlaces*/
+nav ul li {
+    font-size: 35px;
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+/*Con esto evitamos que los hipervinculos se vean como tal*/
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/*Para cuando el mouse esté encima*/
+nav a:hover {
+    color: aqua;
+    text-shadow:0 5px 50px rgba(63, 255, 166, 196);
+}
+
+/* Grid de Imagenes */
+        .gridImagenes {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 10px;
+            padding: 10px; /* Espacio interno */
+        }
+        
+        /*Con esto se evita que se vea feo al crecer*/
+        .gridImagen {
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Estilo de las imágenes */
+        .gridImagen img {
+            width: 100%;
+            height: auto; 
+            transition: transform 0.3s; /*Transicion para el hover*/
+        }
+
+        /* Efecto al hacer hover */
+        .gridImagen:hover img {
+            transform: scale(1.1); /*Hace que la imagen cresca*/
+        }
+
+
+/*Formato para los articulos y sus iframes*/
+
+
+.body_container{
+    display: flex; 
+    margin: 20px;
+}
+
+
+article {
+    color: white;
+    background-color: black;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 50px rgba(255, 255, 255, 255);   
+    flex:1;
+}
+
+articles:hover{ /*No está sirviendo*/
+    justify-content: space-between;
+    box-shadow: 0 5px 50px rgba(63, 255, 166, 196);
+}
+
+
+/*Hacer que el iframe se vea bonito*/
+iframe {
+    display: table;
+    margin: 0 auto;
+    border-radius: 15px;
+    
+}
+
+h3 {
+    text-align: center;
+}
+
+/* Cuerpo de la*/
+body {
+    background: linear-gradient(109.6deg, rgb(20, 30, 48) 11.2%, rgb(36, 59, 85) 91.1%); /* Degradado */
+    height: 100vh; /* Asegurar que el fondo cubra toda la altura de la página */
+}
+
+#tarjetaGrafica{
+    
+}
+
+
